@@ -1,36 +1,146 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ALYZR — AI Automation Agency 🚀
 
-## Getting Started
+ALYZR is a modern AI automation agency website built with Next.js.
+It showcases services like WhatsApp automation, AI voice agents, and workflow automation designed to help businesses scale efficiently.
 
-First, run the development server:
+---
 
-```bash
+## 🌐 Live Preview
+
+> (Add your live URL after deployment)
+
+https://alyzr.tech
+
+---
+
+## ⚙️ Tech Stack
+
+* Next.js (App Router)
+* React
+* TypeScript
+* Tailwind CSS
+* Vercel (Deployment)
+
+---
+
+## ✨ Features
+
+* High-converting landing page
+* AI-focused service sections
+* Pricing plans (Starter / Growth / Custom)
+* Portfolio / system previews
+* Contact form with email integration
+* WhatsApp direct integration
+* Responsive design (mobile + desktop)
+* Smooth animations & modern UI
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+git clone
+
+---
+
+### 2. Install dependencies
+
+npm install
+
+---
+
+### 3. Setup environment variables
+
+Create a `.env.local` file:
+
+SMTP_HOST=
+SMTP_PORT=
+SMTP_SECURE=
+SMTP_USER=
+SMTP_PASS=
+CONTACT_EMAIL=
+
+---
+
+### 4. Run development server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+src/
+├── app/
+│    ├── page.tsx
+│    ├── layout.tsx
+│    └── globals.css
+│
+├── components/
+│    ├── Hero.tsx
+│    ├── Services.tsx
+│    ├── Pricing.tsx
+│    ├── Contact.tsx
+│    ├── Navbar.tsx
+│    ├── Portfolio.tsx
+│    ├── TrustSection.tsx
+│    ├── CtaSection.tsx
+│    └── FloatingWhatsApp.tsx
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Build for Production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+npm run build
+npm start
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The easiest way to deploy is using Vercel:
+
+1. Push repo to GitHub
+2. Import project in Vercel
+3. Add environment variables
+4. Deploy
+
+---
+
+## 🔐 Environment Variables (Important)
+Use `.env.local` and configure secrets in Vercel dashboard.
+
+---
+
+## 🎯 Purpose
+
+This project is designed to:
+
+* Showcase AI automation services
+* Generate client leads
+* Serve as a production-ready agency website
+
+---
+
+## 📬 Contact
+
+* WhatsApp: +91 9830957700
+* Email: samreenmj@gmail.com
+
+---
+
+## 🧠 Future Improvements
+
+* Add CMS (Sanity / Contentful)
+* Blog section (SEO)
+* Analytics integration
+* Case studies with real data
+
+---
+
+## 📄 License
+This project is for personal / commercial use.
