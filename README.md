@@ -7,8 +7,7 @@ It showcases services like WhatsApp automation, AI voice agents, and workflow au
 
 ## 🌐 Live Preview
 
-> (Add your live URL after deployment)
-
+https://alyzr.vercel.app/
 https://alyzr.tech
 
 ---
