@@ -1,30 +1,42 @@
 import type { Metadata } from "next";
-import { Great_Vibes, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Cormorant_Garamond, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
-const greatVibes = Great_Vibes({
-  weight: "400",
-  variable: "--font-cursive",
+const cormorantGaramond = Cormorant_Garamond({
+  weight: ["400", "500"],
+  style: ["normal", "italic"],
+  variable: "--font-editorial",
   subsets: ["latin"],
-});
-
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-sans",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "ALYZR | AI Automation Agency",
-  description: "A curated portfolio of intentional product experiences.",
+  title: "Alyzr Labs | Production-Ready Software & Business AI",
+  description:
+    "Alyzr Labs helps founders and small businesses harden AI-generated prototypes, build focused MVPs, and implement reliable business AI workflows.",
+  openGraph: {
+    title: "Alyzr Labs | Production-Ready Software & Business AI",
+    description:
+      "Production-readiness reviews, focused MVP builds, and reliable business AI workflows for founders and small businesses.",
+    type: "website",
+    locale: "en_US",
+    siteName: "Alyzr Labs",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alyzr Labs | Production-Ready Software & Business AI",
+    description:
+      "Production-readiness reviews, focused MVP builds, and reliable business AI workflows for founders and small businesses.",
+  },
 };
-
-import Navbar from "@/components/Navbar";
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 export default function RootLayout({
   children,
@@ -34,10 +46,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${greatVibes.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased dark`}
+      className={`${cormorantGaramond.variable} ${jetbrainsMono.variable} h-full antialiased dark`}
       style={{ colorScheme: "dark" }}
     >
-      <body className="min-h-full flex flex-col bg-[#131313] text-white overflow-x-hidden pt-20">
+      <body className="min-h-full flex flex-col bg-[#171715] text-[#A9A39A] overflow-x-hidden selection:bg-[#242321] selection:text-[#C9BDB1]">
         <Navbar />
         {children}
         <FloatingWhatsApp />
