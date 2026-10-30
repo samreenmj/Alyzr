@@ -1,7 +1,6 @@
-# ALYZR — AI Automation Agency 🚀
+# Alyzr Labs — AI Automation Agency 🚀
 
-ALYZR is a modern AI automation agency website built with Next.js.
-It showcases services like WhatsApp automation, AI voice agents, and workflow automation designed to help businesses scale efficiently.
+Alyzr Labs is a product engineering studio helping founders and small businesses prepare AI-generated prototypes for production, build MVPs, and implement focused business AI workflows.
 
 ---
 
@@ -25,8 +24,7 @@ https://alyzr.tech
 ## ✨ Features
 
 * High-converting landing page
-* AI-focused service sections
-* Pricing plans (Starter / Growth / Custom)
+* Production-readiness reviews, MVP builds, business AI workflows, and ongoing engineering support
 * Portfolio / system previews
 * Contact form with email integration
 * WhatsApp direct integration
@@ -82,12 +80,10 @@ src/
 ├── components/
 │    ├── Hero.tsx
 │    ├── Services.tsx
-│    ├── Pricing.tsx
+│    ├── HowItWorks.tsx
+│    ├── Portfolio.tsx
 │    ├── Contact.tsx
 │    ├── Navbar.tsx
-│    ├── Portfolio.tsx
-│    ├── TrustSection.tsx
-│    ├── CtaSection.tsx
 │    └── FloatingWhatsApp.tsx
 
 ---

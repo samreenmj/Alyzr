@@ -1,45 +1,112 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
 
 export default function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navLinks = [
+    { href: "#services", label: "Services" },
+    { href: "#methodology", label: "Approach" },
+    { href: "#work", label: "Projects" },
+    { href: "#contact", label: "Contact" },
+  ];
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-[100] border-b border-white/[0.05] bg-[#0a0a0a]/50 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
-        {/* Left Side: Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
-          {/* We use a mix of our font styles for the logo to reflect the brand */}
-          <span className="font-cursive text-3xl text-white transform -rotate-2 group-hover:text-zinc-300 transition-colors">A</span>
-          <span className="font-sans font-bold text-xl tracking-widest text-white group-hover:text-zinc-300 transition-colors uppercase">
-            Alyzr
+    <header className="fixed top-0 left-0 right-0 z-[100] border-b border-[#2e2d29] bg-[#171715] backdrop-blur-none">
+      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        {/* Brand Logo */}
+        <Link
+          href="/"
+          className="group focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C9BDB1]"
+        >
+          <span className="font-serif text-2xl md:text-3xl tracking-[0.01em] text-[#C9BDB1] group-hover:text-white transition-colors">
+            Alyzr Labs
           </span>
         </Link>
 
         {/* Center: Desktop Nav Links */}
-        <nav className="hidden md:flex items-center gap-8">
-          <Link href="#services" className="font-mono text-xs uppercase tracking-widest text-zinc-400 hover:text-white transition-colors">
-            Services
-          </Link>
-          <Link href="#how-it-works" className="font-mono text-xs uppercase tracking-widest text-zinc-400 hover:text-white transition-colors">
-            Process
-          </Link>
-          <Link href="#portfolio" className="font-mono text-xs uppercase tracking-widest text-zinc-400 hover:text-white transition-colors">
-            Work
-          </Link>
-          <Link href="#pricing" className="font-mono text-xs uppercase tracking-widest text-zinc-400 hover:text-white transition-colors">
-            Pricing
-          </Link>
+        <nav className="hidden lg:flex items-center gap-8" aria-label="Main navigation">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="font-sans text-xs uppercase tracking-[0.2em] text-[#A9A39A] hover:text-[#C9BDB1] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C9BDB1] py-1"
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
 
-        {/* Right Side: CTA */}
+        {/* Right Side: CTA & Mobile Toggle */}
         <div className="flex items-center gap-4">
           <Link
             href="#contact"
-            className="px-6 py-2.5 bg-white text-black font-sans font-semibold text-sm rounded-full hover:bg-zinc-200 hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,255,255,0.1)]"
+            className="hidden sm:inline-block px-5 py-2.5 text-xs font-sans uppercase tracking-[0.2em] text-[#C9BDB1] bg-[#242321] border border-[#3a3935] hover:bg-[#C9BDB1] hover:text-[#171715] hover:border-[#C9BDB1] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C9BDB1]"
           >
-            Let's Talk
+            Start Project
           </Link>
+
+          {/* Mobile Menu Button */}
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="lg:hidden p-2 text-[#C9BDB1] hover:text-white border border-[#2e2d29] bg-[#242321] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C9BDB1]"
+            aria-label="Toggle navigation menu"
+            aria-expanded={mobileMenuOpen}
+          >
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              {mobileMenuOpen ? (
+                <path
+                  strokeLinecap="square"
+                  strokeLinejoin="miter"
+                  strokeWidth="1.5"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="square"
+                  strokeLinejoin="miter"
+                  strokeWidth="1.5"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
         </div>
       </div>
+
+      {/* Mobile Drawer */}
+      {mobileMenuOpen && (
+        <div className="lg:hidden border-t border-[#2e2d29] bg-[#171715] px-6 py-8">
+          <nav className="flex flex-col gap-6" aria-label="Mobile navigation">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className="font-sans text-sm uppercase tracking-[0.2em] text-[#A9A39A] hover:text-[#C9BDB1] transition-colors py-1"
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Link
+              href="#contact"
+              onClick={() => setMobileMenuOpen(false)}
+              className="inline-block mt-4 text-center px-6 py-3 text-xs font-sans uppercase tracking-[0.2em] text-[#C9BDB1] bg-[#242321] border border-[#3a3935] hover:bg-[#C9BDB1] hover:text-[#171715] transition-colors"
+            >
+              Start Project
+            </Link>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }

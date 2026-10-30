@@ -1,66 +1,157 @@
 import React from "react";
+import Image from "next/image";
 
 const PROJECTS = [
   {
-    id: 1,
-    title: "WhatsApp AI Assistant",
-    category: "Lead Capture",
-    gradient: "from-[#2A4B3A] to-[#132A1F]",
-    image: "/portfolio/whatsapp.png",
-    result: "Handled 1,000+ conversations/month"
+    title: "Scrible — Real-time Collaborative Whiteboard",
+    category: "Independent Product",
+    description:
+      "A shared digital canvas for teams to sketch, organize ideas, and collaborate in real time. Built with live synchronization and a full-stack architecture designed for collaborative work.",
+    technologies: [
+      "Next.js",
+      "React",
+      "Node.js",
+      "Express",
+      "WebSockets",
+      "PostgreSQL",
+      "Prisma",
+    ],
+    image: "/portfolio/images/projects/scrible-preview.svg",
+    imageAlt:
+      "Illustrative product visualization of Scrible's shared whiteboard with connected notes, shapes, and drawing tools.",
+    imageCaption: "Illustrative product preview · not a screenshot",
   },
   {
-    id: 2,
-    title: "Centralized Sync Dashboard",
-    category: "Workflow Automation",
-    gradient: "from-[#2B3A4F] to-[#121A2A]",
-    image: "/portfolio/sync.png",
-    result: "Automated full lead pipeline"
+    title: "RelayGraph — Graph-backed Memory & Agent Coordination",
+    category: "Agentic AI · Hackathon Project",
+    description:
+      "A graph-backed persistent memory and agent coordination system built with FalkorDB. Specialized AI workers collaborate across investigation, implementation, and verification while maintaining shared task context.",
+    technologies: ["FalkorDB", "Graph Database", "AI Agents", "TypeScript"],
+    image: "/portfolio/images/projects/relaygraph.png",
+    imageAlt:
+      "RelayGraph interface showing an investigation task, coordinated agents, workflow progress, and graph-backed knowledge.",
   },
   {
-    id: 3,
-    title: "Outbound Voice Agent",
-    category: "AI Voice",
-    gradient: "from-[#4A2B42] to-[#251221]",
-    image: "/portfolio/voice.png",
-    result: "Increased conversion rate by 35%"
-  }
+    title: "LeakOps — Payment Recovery Infrastructure for SaaS Businesses",
+    category: "Product Collaboration",
+    description:
+      "A product collaboration focused on payment recovery infrastructure for SaaS businesses. LeakOps aims to help businesses manage failed payments and recurring-revenue recovery through a dedicated platform.",
+    technologies: [
+      "SaaS",
+      "Payment Recovery",
+      "Recurring Revenue",
+      "Revenue Operations",
+    ],
+    image: "/portfolio/images/projects/leakops.png",
+    imageAlt:
+      "LeakOps website presenting its payment recovery platform for SaaS businesses.",
+    website: "https://leakops.online/",
+  },
 ];
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="relative w-full py-24 px-4 z-20">
-      <div className="max-w-6xl mx-auto">
-        <div className="mb-16 flex flex-col md:flex-row justify-between items-end gap-6 border-b border-white/10 pb-8">
-          <div>
-            <h2 className="font-sans font-bold text-4xl sm:text-5xl text-white mb-2">Featured Systems</h2>
-            <p className="font-mono text-zinc-400">Glimpses of deployed automation interfaces.</p>
+    <section
+      id="work"
+      className="w-full border-b border-[#2e2d29] bg-[#171715] px-6 py-24 md:py-32"
+    >
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-12 grid grid-cols-1 items-end gap-6 border-b border-[#2e2d29] pb-8 md:mb-16 md:grid-cols-12 md:gap-8">
+          <div className="md:col-span-7">
+            <span className="mb-3 block font-sans text-[11px] uppercase tracking-[0.25em] text-[#A9A39A]">
+              Selected Work
+            </span>
+            <h2 className="font-serif text-4xl tracking-tight text-[#C9BDB1] sm:text-5xl md:text-6xl">
+              Projects &amp; Products.
+            </h2>
+            <div className="mt-4 h-px w-12 bg-[#A66F70]" />
           </div>
+          <p className="font-sans text-sm leading-relaxed text-[#A9A39A] sm:text-base md:col-span-5">
+            Selected work across collaborative software, agentic systems, and
+            SaaS infrastructure.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {PROJECTS.map((proj) => (
-            <div key={proj.id} className="group cursor-pointer">
-              {/* Mock UI Frame */}
-              <div className={`w-full aspect-[4/3] rounded-3xl bg-[#050505] border border-white/10 shadow-ambient relative overflow-hidden mb-6 transition-transform duration-500 group-hover:scale-[1.02]`}>
-                <img 
-                  src={proj.image} 
-                  alt={proj.title} 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.05]"
-                />
-                {/* Subtle gradient overlay to match brand */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${proj.gradient} opacity-20 pointer-events-none mix-blend-color`}></div>
-              </div>
-
-              {/* Descriptions */}
-              <div>
-                <p className="font-mono text-xs uppercase text-zinc-500 mb-1 tracking-widest">{proj.category}</p>
-                <h3 className="font-sans font-semibold text-xl text-white group-hover:text-zinc-300 transition-colors mb-2">{proj.title}</h3>
-                <div className="inline-block px-3 py-1 bg-[#2A4B3A]/30 border border-[#2A4B3A]/50 rounded-full font-mono text-[10px] sm:text-xs text-[#25D366] mt-1 shadow-[0_0_10px_rgba(37,211,102,0.1)]">
-                  ✓ {proj.result}
+        <div>
+          {PROJECTS.map((project, index) => (
+            <article
+              key={project.title}
+              className={`grid grid-cols-1 items-center gap-8 py-10 md:grid-cols-12 md:gap-12 md:py-14 ${
+                index < PROJECTS.length - 1
+                  ? "border-b border-[#2e2d29]"
+                  : ""
+              }`}
+            >
+              <figure
+                className={`min-w-0 md:col-span-7 ${
+                  index === 1 ? "md:order-2" : ""
+                }`}
+              >
+                <div
+                  className={`relative overflow-hidden border border-[#3a3935] bg-[#242321] p-1.5 ${
+                    index === 1 ? "aspect-[1271/552]" : "aspect-[16/7]"
+                  }`}
+                >
+                  <Image
+                    src={project.image}
+                    alt={project.imageAlt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 58vw"
+                    className={`object-contain ${
+                      index === 1
+                        ? ""
+                        : "transition-transform duration-500 ease-out hover:scale-[1.015]"
+                    }`}
+                  />
                 </div>
+                {project.imageCaption && (
+                  <figcaption className="mt-2 font-sans text-[10px] uppercase tracking-[0.16em] text-[#A9A39A]">
+                    {project.imageCaption}
+                  </figcaption>
+                )}
+              </figure>
+
+              <div
+                className={`md:col-span-5 ${
+                  index === 1 ? "md:order-1" : ""
+                }`}
+              >
+                <span className="mb-3 block font-sans text-[10px] uppercase tracking-[0.22em] text-[#B47B7C]">
+                  {project.category}
+                </span>
+                <h3 className="font-serif text-2xl leading-tight tracking-tight text-[#C9BDB1] sm:text-3xl">
+                  {project.website ? (
+                    <a
+                      href={project.website}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="transition-colors hover:text-white focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#A66F70]"
+                    >
+                      {project.title}
+                    </a>
+                  ) : (
+                    project.title
+                  )}
+                </h3>
+                <p className="mt-4 font-sans text-sm leading-relaxed text-[#A9A39A] sm:text-base">
+                  {project.description}
+                </p>
+                <p className="mt-5 font-mono text-[10px] leading-6 text-[#A9A39A] sm:text-[11px]">
+                  {project.technologies.join(" · ")}
+                </p>
+                {project.website && (
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-5 inline-flex items-center gap-2 font-sans text-xs text-[#C9BDB1] transition-colors hover:text-white focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#A66F70]"
+                  >
+                    Visit LeakOps
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                )}
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

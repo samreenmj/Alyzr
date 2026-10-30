@@ -1,40 +1,47 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[90vh] flex flex-col items-center justify-center text-center px-4 pt-10 z-20">
-      {/* Background Animated Glow */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/[0.03] rounded-full blur-[120px] pointer-events-none -z-10"></div>
-      
-      <div className="w-full max-w-5xl mx-auto flex flex-col items-center fade-in-up">
-        {/* Pre-title */}
-        <div className="mb-6 inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/[0.1] bg-white/[0.03] backdrop-blur-md">
-          <div className="w-2 h-2 rounded-full bg-white animate-pulse"></div>
-          <span className="text-xs font-mono tracking-widest uppercase text-white/70">Alyzr Automation</span>
+    <section className="relative w-full pt-32 md:pt-44 pb-20 md:pb-28 px-6 border-b border-[#2e2d29] bg-[#171715]">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex items-center gap-4 mb-8">
+          <div className="w-8 h-[1px] bg-[#A66F70]"></div>
+          <span className="font-sans text-[11px] uppercase tracking-[0.25em] text-[#C9BDB1]">
+            For founders, vibe coders &amp; small businesses
+          </span>
         </div>
 
-        {/* Main Headline */}
-        <h1 className="font-sans font-bold text-5xl sm:text-6xl md:text-7xl tracking-tighter text-white leading-tight mb-6 drop-shadow-lg text-center w-full [text-wrap:balance]">
-          Automate Leads, Sales <br className="hidden lg:block" />
-          <span className="lg:hidden"> </span>& Support with AI
-        </h1>
-        
-        {/* Subtext */}
-        <p className="font-mono text-base sm:text-lg text-zinc-300 max-w-2xl leading-relaxed mb-10">
-          We build WhatsApp bots, AI voice agents, and automated systems that run your business 24/7 — so you don’t have to.
-        </p>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-col items-center gap-4 w-full sm:w-auto">
-          <div className="flex flex-col sm:flex-row gap-4 items-center">
-            <a href="#contact" className="px-10 py-5 bg-white text-[#111] font-sans font-bold rounded-full hover:scale-105 transition-all duration-300 shadow-[0_0_40px_rgba(255,255,255,0.4)] text-lg">
-              ✅ Book a Call
-            </a>
-            <a href="#services" className="text-zinc-400 hover:text-white font-mono text-sm underline underline-offset-4 transition-colors duration-300 mt-2 sm:mt-0 sm:ml-4">
-              View Services
-            </a>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          <div className="lg:col-span-8">
+            <h1 className="font-serif font-normal text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-[#C9BDB1] tracking-tight leading-[0.98] text-balance">
+              From idea to launch.
+              <br />
+              <span className="italic">Built to last.</span>
+            </h1>
           </div>
-          <span className="font-mono text-xs text-zinc-500 mt-2 tracking-widest uppercase">No commitment consultation</span>
+
+          <div className="lg:col-span-4 flex flex-col justify-between pt-2 lg:pt-4">
+            <div>
+              <div className="w-12 h-[1px] bg-[#A66F70] mb-6"></div>
+
+              <p className="font-sans text-base sm:text-lg text-[#A9A39A] leading-relaxed mb-8">
+                Production-readiness reviews for AI-generated apps, focused MVPs, and reliable business AI workflows.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-start gap-5">
+              <Link
+                href="#contact"
+                className="inline-flex items-center justify-center px-6 py-4 bg-[#C9BDB1] text-[#171715] font-sans text-xs uppercase tracking-[0.2em] font-medium hover:bg-white transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white"
+              >
+                Discuss your project
+              </Link>
+              <Link href="#services" className="font-sans text-xs uppercase tracking-[0.2em] text-[#A9A39A] hover:text-[#C9BDB1] transition-colors">
+                Explore services &rarr;
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>

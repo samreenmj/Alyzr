@@ -1,43 +1,77 @@
 import React from "react";
 
-const STEPS = [
+const PHASES = [
   {
-    step: "01",
-    title: "Consultation",
-    desc: "We analyze your current bottlenecks, workflows, and communication channels to find leverage points."
+    phase: "01",
+    title: "Scope",
+    tagline: "Agree on the outcome",
+    desc: "Review the codebase or define a focused product scope, milestones, and acceptance criteria.",
   },
   {
-    step: "02",
-    title: "Setup & Integration",
-    desc: "We build custom AI models or deploy automation pipelines seamlessly into your existing tools."
+    phase: "02",
+    title: "Build or review",
+    tagline: "Work in the open",
+    desc: "Improve the existing app or build core workflows in focused milestones with inspectable progress.",
   },
   {
-    step: "03",
-    title: "Go Live & Scale",
-    desc: "Launch the system, monitor the performance, and instantly handle 10x more volume with zero extra headcount."
-  }
+    phase: "03",
+    title: "Verify & hand over",
+    tagline: "Ready for the next step",
+    desc: "Check critical flows, prepare for launch, and hand over the code and practical next steps.",
+  },
 ];
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="relative w-full py-24 px-4 z-20 bg-black/40 border-y border-white/5">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="font-sans font-bold text-4xl sm:text-5xl text-white mb-4">How It Works</h2>
-          <p className="font-mono text-zinc-400">From discovery to deployment in weeks.</p>
+    <section id="methodology" className="relative w-full py-24 md:py-28 px-6 border-b border-[#2e2d29] bg-[#171715]">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-end mb-16 pb-8 border-b border-[#2e2d29]">
+          <div className="md:col-span-7">
+            <span className="font-sans text-[11px] uppercase tracking-[0.25em] text-[#A9A39A] block mb-3">
+              How We Work
+            </span>
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#C9BDB1] tracking-tight">
+              Clear from day one.
+            </h2>
+            <div className="w-12 h-[1px] bg-[#A66F70] mt-4"></div>
+          </div>
+          <div className="md:col-span-5">
+            <p className="font-sans text-sm sm:text-base text-[#A9A39A] leading-relaxed">
+              A compact, transparent process for reviews, builds, and workflow projects.
+            </p>
+          </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-start gap-8 relative">
-          {/* Subtle linking line for desktop */}
-          <div className="hidden md:block absolute top-[28px] left-10 right-10 h-[1px] bg-white/10 z-0"></div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {PHASES.map((p) => (
+            <div
+              key={p.phase}
+              className="bg-[#242321] border border-[#2e2d29] p-7 sm:p-8 flex flex-col justify-between group hover:border-[#3a3935] transition-colors"
+            >
+              <div>
+                <span className="font-serif text-3xl sm:text-4xl text-[#C9BDB1] block mb-4 tracking-tight">
+                  {p.phase}
+                </span>
 
-          {STEPS.map((item, idx) => (
-            <div key={idx} className="relative flex-1 flex flex-col items-center text-center z-10 w-full fade-in-up" style={{ animationDelay: `${idx * 0.2}s` }}>
-              <div className="w-14 h-14 rounded-full bg-[#1c1b1b] border-2 border-white/20 flex items-center justify-center font-mono text-xl text-white shadow-[0_0_20px_rgba(255,255,255,0.1)] mb-6">
-                {item.step}
+                <div className="w-6 h-[1px] bg-[#A66F70] mb-4"></div>
+
+                <h3 className="font-serif text-xl text-[#C9BDB1] mb-1 tracking-tight">
+                  {p.title}
+                </h3>
+                <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#A9A39A] block mb-4">
+                  {p.tagline}
+                </span>
+
+                <p className="font-sans text-xs sm:text-sm text-[#A9A39A] leading-relaxed">
+                  {p.desc}
+                </p>
               </div>
-              <h3 className="font-sans font-bold text-2xl text-white mb-3">{item.title}</h3>
-              <p className="font-mono text-sm text-zinc-400 max-w-xs">{item.desc}</p>
+
+              <div className="pt-6 mt-6 border-t border-[#2e2d29] flex items-center justify-between text-[#A9A39A]">
+                <span className="font-sans text-[10px] uppercase tracking-[0.2em]">Step {p.phase}</span>
+                <span className="font-mono text-xs">&rarr;</span>
+              </div>
             </div>
           ))}
         </div>

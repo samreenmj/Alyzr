@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="630" viewBox="0 0 1440 630" fill="none">
+  <rect width="1440" height="630" rx="22" fill="#1B1B19"/>
+  <rect x="1" y="1" width="1438" height="628" rx="21" stroke="#484640" stroke-width="2"/>
+
+  <path d="M22 76H1418" stroke="#3A3935" stroke-width="2"/>
+  <rect x="22" y="22" width="1396" height="54" rx="12" fill="#242321"/>
+  <rect x="39" y="35" width="28" height="28" rx="8" fill="#A66F70"/>
+  <path d="M47 42H60V45H50V48H58V51H50V56H47V42Z" fill="#F4EEE8"/>
+  <text x="78" y="54" fill="#C9BDB1" font-family="Arial, sans-serif" font-size="17" font-weight="600">Scrible</text>
+  <path d="M163 49H178" stroke="#605B53" stroke-width="1.5"/>
+  <text x="194" y="53" fill="#D9D3CA" font-family="Arial, sans-serif" font-size="14" font-weight="500">Product planning</text>
+  <rect x="1174" y="34" width="117" height="30" rx="15" fill="#302C29"/>
+  <circle cx="1190" cy="49" r="4" fill="#A66F70"/>
+  <text x="1201" y="53" fill="#C9BDB1" font-family="Arial, sans-serif" font-size="12">Shared canvas</text>
+
+  <rect x="22" y="92" width="64" height="516" rx="14" fill="#242321"/>
+  <rect x="37" y="108" width="34" height="34" rx="9" fill="#39322F"/>
+  <path d="M48 117L61 128L54 129L51 136L48 117Z" fill="#D9D3CA"/>
+  <rect x="39" y="157" width="30" height="30" rx="7" fill="#2C2B28"/>
+  <rect x="47" y="164" width="15" height="15" rx="3" fill="#E8C984"/>
+  <rect x="39" y="200" width="30" height="30" rx="7" fill="#2C2B28"/>
+  <rect x="47" y="207" width="15" height="15" rx="3" stroke="#C9BDB1" stroke-width="2"/>
+  <rect x="39" y="243" width="30" height="30" rx="7" fill="#2C2B28"/>
+  <path d="M46 258H62M54 250V266" stroke="#C9BDB1" stroke-width="2" stroke-linecap="round"/>
+  <rect x="39" y="286" width="30" height="30" rx="7" fill="#2C2B28"/>
+  <path d="M47 308L60 295" stroke="#C9BDB1" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M55 295H60V300" stroke="#C9BDB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="39" y="329" width="30" height="30" rx="7" fill="#2C2B28"/>
+  <path d="M46 350C49 342 53 347 55 339C57 334 60 342 62 337" stroke="#C9BDB1" stroke-width="2" stroke-linecap="round"/>
+  <path d="M40 383H68" stroke="#3A3935" stroke-width="1.5"/>
+  <circle cx="48" cy="402" r="6" fill="#A66F70"/>
+  <circle cx="64" cy="402" r="6" fill="#E8C984"/>
+  <circle cx="48" cy="420" r="6" fill="#8EA59A"/>
+  <circle cx="64" cy="420" r="6" fill="#C9BDB1"/>
+
+  <rect x="102" y="92" width="1316" height="516" rx="14" fill="#F1EFEA"/>
+  <path d="M102 142H1418M102 192H1418M102 242H1418M102 292H1418M102 342H1418M102 392H1418M102 442H1418M102 492H1418M102 542H1418M152 92V608M202 92V608M252 92V608M302 92V608M352 92V608M402 92V608M452 92V608M502 92V608M552 92V608M602 92V608M652 92V608M702 92V608M752 92V608M802 92V608M852 92V608M902 92V608M952 92V608M1002 92V608M1052 92V608M1102 92V608M1152 92V608M1202 92V608M1252 92V608M1302 92V608M1352 92V608M1402 92V608" stroke="#E4E1DA" stroke-width="1"/>
+
+  <text x="151" y="159" fill="#6F6A62" font-family="Arial, sans-serif" font-size="13" letter-spacing="1.3">ONBOARDING FLOW</text>
+
+  <path d="M466 322C528 322 526 250 594 250" stroke="#A66F70" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M779 250C840 250 837 322 901 322" stroke="#A66F70" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M585 244L596 250L585 256M892 316L903 322L892 328" stroke="#A66F70" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="236" y="246" width="232" height="155" rx="7" fill="#E8C984"/>
+  <path d="M252 265H452" stroke="#D3B66F" stroke-width="1.5"/>
+  <text x="256" y="293" fill="#37332E" font-family="Arial, sans-serif" font-size="13" font-weight="600">START HERE</text>
+  <text x="256" y="328" fill="#37332E" font-family="Arial, sans-serif" font-size="19" font-weight="600">Understand the</text>
+  <text x="256" y="354" fill="#37332E" font-family="Arial, sans-serif" font-size="19" font-weight="600">problem first</text>
+  <text x="256" y="382" fill="#6F6657" font-family="Arial, sans-serif" font-size="12">What does a new team need?</text>
+
+  <rect x="592" y="177" width="190" height="147" rx="7" fill="#E8DED3"/>
+  <path d="M608 196H766" stroke="#D0C2B5" stroke-width="1.5"/>
+  <text x="612" y="224" fill="#5A5149" font-family="Arial, sans-serif" font-size="13" font-weight="600">MAP THE FLOW</text>
+  <text x="612" y="260" fill="#37332E" font-family="Arial, sans-serif" font-size="18" font-weight="600">First visit</text>
+  <text x="612" y="286" fill="#37332E" font-family="Arial, sans-serif" font-size="18" font-weight="600">→ First project</text>
+  <text x="612" y="308" fill="#6F665F" font-family="Arial, sans-serif" font-size="12">Keep each step clear</text>
+
+  <rect x="900" y="246" width="224" height="155" rx="7" fill="#D9E1D8"/>
+  <path d="M916 265H1108" stroke="#C1CEC0" stroke-width="1.5"/>
+  <text x="920" y="293" fill="#536256" font-family="Arial, sans-serif" font-size="13" font-weight="600">TRY AN IDEA</text>
+  <text x="920" y="328" fill="#343C35" font-family="Arial, sans-serif" font-size="19" font-weight="600">Make the next</text>
+  <text x="920" y="354" fill="#343C35" font-family="Arial, sans-serif" font-size="19" font-weight="600">action visible</text>
+  <text x="920" y="382" fill="#657166" font-family="Arial, sans-serif" font-size="12">What could we sketch?</text>
+
+  <rect x="1192" y="198" width="145" height="109" rx="8" fill="#F8F6F1" stroke="#A66F70" stroke-width="2"/>
+  <text x="1210" y="228" fill="#A66F70" font-family="Arial, sans-serif" font-size="12" font-weight="600">A SHARED SPACE</text>
+  <text x="1210" y="256" fill="#47433D" font-family="Arial, sans-serif" font-size="14">Ideas take shape</text>
+  <text x="1210" y="278" fill="#47433D" font-family="Arial, sans-serif" font-size="14">together.</text>
+
+  <path d="M1128 324L1153 339L1141 341L1136 353L1128 324Z" fill="#A66F70"/>
+  <circle cx="1140" cy="351" r="4" fill="#A66F70"/>
+
+  <path d="M264 475C297 456 320 498 354 479C377 466 389 454 421 467" stroke="#758678" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="264" cy="475" r="5" fill="#758678"/>
+  <rect x="667" y="421" width="151" height="80" rx="3" stroke="#8D8276" stroke-width="2" fill="#F1EFEA"/>
+  <path d="M695 461H790M743 437V485" stroke="#8D8276" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="1054" cy="481" r="42" stroke="#A66F70" stroke-width="2.5"/>
+  <path d="M1036 483C1045 466 1052 493 1063 475C1068 467 1073 474 1076 478" stroke="#A66F70" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

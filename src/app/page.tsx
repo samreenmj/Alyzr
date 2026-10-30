@@ -1,41 +1,57 @@
 import React from "react";
-import Loader from "@/components/Loader";
+import Link from "next/link";
 import Hero from "@/components/Hero";
-import TrustSection from "@/components/TrustSection";
 import Services from "@/components/Services";
 import HowItWorks from "@/components/HowItWorks";
 import Portfolio from "@/components/Portfolio";
-import Pricing from "@/components/Pricing";
-import CtaSection from "@/components/CtaSection";
 import Contact from "@/components/Contact";
 
 export default function Home() {
-  return (
-    <main className="relative min-h-screen bg-grid flex flex-col items-center overflow-x-hidden">
-      {/* 2-Second AI Orb Loader */}
-      <Loader />
+  const currentYear = new Date().getFullYear();
 
+  return (
+    <main className="relative min-h-screen bg-[#171715] flex flex-col items-center overflow-x-hidden">
       {/* Main Single Page Content */}
       <div className="w-full relative z-10 flex flex-col items-center">
         <Hero />
-        <TrustSection />
         <Services />
         <HowItWorks />
         <Portfolio />
-        <Pricing />
-        <CtaSection />
         <Contact />
       </div>
 
-      {/* Footer minimal */}
-      <footer className="w-full py-8 border-t border-white/5 text-center bg-black/50 z-20">
-        <p className="font-mono text-xs text-zinc-600 uppercase tracking-widest">
-          © {new Date().getFullYear()} ALYZR AUTOMATION. All rights reserved.
-        </p>
-      </footer>
+      {/* Studio Editorial Footer */}
+      <footer className="w-full py-16 md:py-20 px-6 border-t border-[#2e2d29] bg-[#171715] z-20">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-baseline gap-3">
+            <span className="font-serif text-2xl tracking-[0.02em] text-[#C9BDB1]">
+              Alyzr Labs
+            </span>
+          </div>
 
-      {/* Cinematic Vignette Overlay */}
-      <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_20%,_#0a0a0a_100%)] z-0 mix-blend-multiply opacity-80"></div>
+          <nav className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-xs font-sans uppercase tracking-[0.2em] text-[#A9A39A]">
+            <Link href="#services" className="hover:text-[#C9BDB1] transition-colors">
+              Services
+            </Link>
+            <Link href="#methodology" className="hover:text-[#C9BDB1] transition-colors">
+              Approach
+            </Link>
+            <Link href="#work" className="hover:text-[#C9BDB1] transition-colors">
+              Prototypes
+            </Link>
+            <Link href="#contact" className="hover:text-[#C9BDB1] transition-colors">
+              Contact
+            </Link>
+          </nav>
+
+          <div className="flex items-center gap-4 text-xs font-sans text-[#A9A39A]">
+            <span>&copy; {currentYear} Alyzr Labs.</span>
+            <Link href="#" className="hover:text-[#C9BDB1] transition-colors">
+              &uarr; Top
+            </Link>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
