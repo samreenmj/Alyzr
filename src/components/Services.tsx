@@ -4,7 +4,7 @@ import Link from "next/link";
 const SERVICES = [
   {
     index: "01",
-    tag: "FOR AI-GENERATED PROTOTYPES",
+    tag: "FOR VIBE-CODED PROTOTYPES",
     title: "Production Readiness Review",
     desc: "Find and fix reliability, security, and data-handling risks before real users depend on your app.",
     features: [
@@ -51,16 +51,16 @@ export default function Services() {
         {/* Section Header */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-end mb-16 pb-8 border-b border-[#2e2d29]">
           <div className="md:col-span-7">
-            <span className="font-sans text-[11px] uppercase tracking-[0.25em] text-[#A9A39A] block mb-3">
+            <span className="font-sans text-[11px] uppercase tracking-[0.25em] text-[#B2AAA2] block mb-3">
               Core Capabilities
             </span>
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#C9BDB1] tracking-tight">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#E7DED5] tracking-tight">
               What We Build.
             </h2>
             <div className="w-12 h-[1px] bg-[#A66F70] mt-4"></div>
           </div>
           <div className="md:col-span-5">
-            <p className="font-sans text-sm sm:text-base text-[#A9A39A] leading-relaxed">
+            <p className="font-sans text-sm sm:text-base text-[#C8C0B8] leading-relaxed">
               Four focused ways to take software from prototype or idea to dependable production.
             </p>
           </div>
@@ -74,28 +74,28 @@ export default function Services() {
             >
               <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="font-serif text-xs text-[#C9BDB1] tracking-[0.25em]">
+                  <span className="font-serif text-xs text-[#E7DED5] tracking-[0.25em]">
                     {srv.index}
                   </span>
                   <div className="w-4 h-[1px] bg-[#A66F70]"></div>
-                  <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#C9BDB1]">
+                  <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#B2AAA2]">
                     {srv.tag}
                   </span>
                 </div>
 
-                <h3 className="font-serif text-2xl sm:text-3xl text-[#C9BDB1] mb-4 tracking-tight">
+                <h3 className="font-serif text-2xl sm:text-3xl text-[#E7DED5] mb-4 tracking-tight">
                   {srv.title}
                 </h3>
 
-                <p className="font-sans text-sm text-[#A9A39A] leading-relaxed mb-5">
+                <p className="font-sans text-sm text-[#C8C0B8] leading-relaxed mb-5">
                   {srv.desc}
                 </p>
 
                 <div className="space-y-2 border-t border-[#2e2d29] pt-4">
                   {srv.features.map((feat) => (
                     <div key={feat} className="flex items-start gap-3">
-                      <span className="text-[#B47B7C] font-mono text-xs mt-0.5">&mdash;</span>
-                      <span className="font-sans text-xs sm:text-sm text-[#A9A39A] leading-relaxed">
+                      <span className="text-[#A66F70] font-mono text-xs mt-0.5">&mdash;</span>
+                      <span className="font-sans text-xs sm:text-sm text-[#C8C0B8] leading-relaxed">
                         {feat}
                       </span>
                     </div>
@@ -108,7 +108,7 @@ export default function Services() {
         <div className="mt-8 text-center">
           <Link
             href="#contact"
-            className="inline-flex items-center gap-2 border border-[#3a3935] px-6 py-3 font-sans text-xs uppercase tracking-[0.15em] text-[#C9BDB1] transition-colors hover:border-[#C9BDB1]"
+            className="inline-flex items-center gap-2 border border-[#3a3935] px-6 py-3 font-sans text-xs uppercase tracking-[0.15em] text-[#E7DED5] transition-colors hover:border-[#E7DED5]"
           >
             Scope a project <span>&rarr;</span>
           </Link>

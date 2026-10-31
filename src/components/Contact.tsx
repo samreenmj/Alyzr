@@ -112,32 +112,32 @@ export default function Contact() {
           {/* Left: Studio Inquiry Context */}
           <div className="flex flex-col justify-between lg:col-span-5">
             <div>
-              <span className="mb-3 block font-sans text-[11px] uppercase tracking-[0.25em] text-[#A9A39A]">
+              <span className="mb-3 block font-sans text-[11px] uppercase tracking-[0.25em] text-[#B2AAA2]">
                 Project Intake
               </span>
-              <h2 className="font-serif text-4xl tracking-tight text-[#C9BDB1] sm:text-5xl md:text-6xl">
+              <h2 className="font-serif text-4xl tracking-tight text-[#E7DED5] sm:text-5xl md:text-6xl">
                 Let&apos;s Build.
               </h2>
               {/* Short decorative coral accent divider */}
               <div className="my-6 h-[1px] w-12 bg-[#A66F70]" />
 
-              <p className="mb-4 font-sans text-sm leading-relaxed text-[#A9A39A] sm:text-base">
+              <p className="mb-4 font-sans text-sm leading-relaxed text-[#C8C0B8] sm:text-base">
                 Tell us what you need: a prototype review, an MVP, a business AI workflow, or ongoing engineering support.
               </p>
-              <p className="font-sans text-xs leading-relaxed text-[#A9A39A]">
+              <p className="font-sans text-xs leading-relaxed text-[#B2AAA2]">
                 We&apos;ll reply with next steps and scheduling availability.
               </p>
             </div>
 
             <div className="mt-8 border-t border-[#2e2d29] pt-8">
-              <span className="mb-3 block font-sans text-[10px] uppercase tracking-[0.25em] text-[#A9A39A]">
+              <span className="mb-3 block font-sans text-[10px] uppercase tracking-[0.25em] text-[#B2AAA2]">
                 Fast Technical Response
               </span>
               <a
                 href="https://wa.me/919830957700"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 border border-[#2e2d29] bg-[#242321] px-5 py-3 font-sans text-xs uppercase tracking-[0.15em] text-[#C9BDB1] transition-colors hover:border-[#C9BDB1] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C9BDB1]"
+                className="inline-flex items-center gap-3 border border-[#2e2d29] bg-[#242321] px-5 py-3 font-sans text-xs uppercase tracking-[0.15em] text-[#E7DED5] transition-colors hover:border-[#E7DED5] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#E7DED5]"
               >
                 <span>Direct WhatsApp Technical Chat &rarr;</span>
               </a>
@@ -151,7 +151,7 @@ export default function Contact() {
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor="projectTypeSelect"
-                  className="font-sans text-[10px] uppercase tracking-[0.25em] text-[#C9BDB1]"
+                  className="font-sans text-[10px] uppercase tracking-[0.25em] text-[#B2AAA2]"
                 >
                   Inquiry Focus / Project Journey
                 </label>
@@ -159,7 +159,7 @@ export default function Contact() {
                   id="projectTypeSelect"
                   value={projectType}
                   onChange={(e) => setManualProjectType(e.target.value)}
-                  className="w-full border border-[#3a3935] bg-[#171715] p-3 font-sans text-xs uppercase tracking-[0.15em] text-[#C9BDB1] transition-colors focus:border-[#C9BDB1] focus:outline-none"
+                  className="w-full border border-[#3a3935] bg-[#171715] p-3 font-sans text-xs uppercase tracking-[0.15em] text-[#E7DED5] transition-colors focus:border-[#E7DED5] focus:outline-none"
                 >
                   <option value="Production Readiness Review">
                     Production Readiness Review (Code &amp; Security Audit)
@@ -179,7 +179,7 @@ export default function Contact() {
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor="name"
-                  className="font-sans text-[10px] uppercase tracking-[0.25em] text-[#A9A39A]"
+                  className="font-sans text-[10px] uppercase tracking-[0.25em] text-[#B2AAA2]"
                 >
                   Your Name / Founder Name
                 </label>
@@ -190,14 +190,14 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   placeholder="Jane Smith"
-                  className="w-full border-b border-[#3a3935] bg-transparent pb-3 font-sans text-sm text-[#C9BDB1] placeholder-[#555] transition-colors focus:border-[#C9BDB1] focus:outline-none"
+                  className="w-full border-b border-[#3a3935] bg-transparent pb-3 font-sans text-sm text-[#E7DED5] placeholder-[#B2AAA2] transition-colors focus:border-[#E7DED5] focus:outline-none"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor="email"
-                  className="font-sans text-[10px] uppercase tracking-[0.25em] text-[#A9A39A]"
+                  className="font-sans text-[10px] uppercase tracking-[0.25em] text-[#B2AAA2]"
                 >
                   Direct Email
                 </label>
@@ -208,14 +208,14 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   placeholder="jane@company.com"
-                  className="w-full border-b border-[#3a3935] bg-transparent pb-3 font-sans text-sm text-[#C9BDB1] placeholder-[#555] transition-colors focus:border-[#C9BDB1] focus:outline-none"
+                  className="w-full border-b border-[#3a3935] bg-transparent pb-3 font-sans text-sm text-[#E7DED5] placeholder-[#B2AAA2] transition-colors focus:border-[#E7DED5] focus:outline-none"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor="business"
-                  className="font-sans text-[10px] uppercase tracking-[0.25em] text-[#A9A39A]"
+                  className="font-sans text-[10px] uppercase tracking-[0.25em] text-[#B2AAA2]"
                 >
                   Project Details / Current Code State
                 </label>
@@ -226,7 +226,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   placeholder="Briefly describe your stack, repo link (if ready to share), tools used (Cursor, v0, Next.js), and what you need production-ready..."
-                  className="w-full resize-none border-b border-[#3a3935] bg-transparent pb-3 font-sans text-sm text-[#C9BDB1] placeholder-[#555] transition-colors focus:border-[#C9BDB1] focus:outline-none"
+                  className="w-full resize-none border-b border-[#3a3935] bg-transparent pb-3 font-sans text-sm text-[#E7DED5] placeholder-[#B2AAA2] transition-colors focus:border-[#E7DED5] focus:outline-none"
                 />
               </div>
 
@@ -234,7 +234,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="flex w-full items-center justify-center bg-[#C9BDB1] py-4 font-sans text-xs font-medium uppercase tracking-[0.2em] text-[#171715] transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex w-full items-center justify-center bg-[#E7DED5] py-4 font-sans text-xs font-medium uppercase tracking-[0.2em] text-[#171715] transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {status === "loading" ? (
                     <span className="flex items-center gap-2">
@@ -265,7 +265,7 @@ export default function Contact() {
                   )}
                 </button>
 
-                <span className="mt-4 text-center font-sans text-[10px] uppercase tracking-[0.2em] text-[#A9A39A]">
+                <span className="mt-4 text-center font-sans text-[10px] uppercase tracking-[0.2em] text-[#B2AAA2]">
                   Direct engineering response &bull; No sales pressure
                 </span>
               </div>
@@ -275,7 +275,7 @@ export default function Contact() {
                   role="status"
                   aria-live="polite"
                   aria-atomic="true"
-                  className="border border-[#2e2d29] bg-[#171715] p-4 text-center font-sans text-xs text-[#C9BDB1]"
+                  className="border border-[#2e2d29] bg-[#171715] p-4 text-center font-sans text-xs text-[#E7DED5]"
                 >
                   Inquiry received. We&apos;ll be in touch with scoping feedback within 24 hours.
                 </div>

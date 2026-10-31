@@ -21,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Alyzr Labs | Production-Ready Software & Business AI",
   description:
-    "Alyzr Labs helps founders and small businesses harden AI-generated prototypes, build focused MVPs, and implement reliable business AI workflows.",
+    "Alyzr Labs helps founders and small businesses review and harden vibe-coded prototypes, build focused MVPs, and implement reliable business AI workflows.",
   openGraph: {
     title: "Alyzr Labs | Production-Ready Software & Business AI",
     description:
@@ -49,7 +49,7 @@ export default function RootLayout({
       className={`${cormorantGaramond.variable} ${jetbrainsMono.variable} h-full antialiased dark`}
       style={{ colorScheme: "dark" }}
     >
-      <body className="min-h-full flex flex-col bg-[#171715] text-[#A9A39A] overflow-x-hidden selection:bg-[#242321] selection:text-[#C9BDB1]">
+      <body className="min-h-full flex flex-col bg-[#171715] text-[#C8C0B8] overflow-x-hidden selection:bg-[#242321] selection:text-[#E7DED5]">
         <Navbar />
         {children}
         <FloatingWhatsApp />

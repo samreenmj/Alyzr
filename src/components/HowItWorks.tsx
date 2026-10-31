@@ -28,16 +28,16 @@ export default function HowItWorks() {
         {/* Section Header */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-end mb-16 pb-8 border-b border-[#2e2d29]">
           <div className="md:col-span-7">
-            <span className="font-sans text-[11px] uppercase tracking-[0.25em] text-[#A9A39A] block mb-3">
+            <span className="font-sans text-[11px] uppercase tracking-[0.25em] text-[#B2AAA2] block mb-3">
               How We Work
             </span>
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#C9BDB1] tracking-tight">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#E7DED5] tracking-tight">
               Clear from day one.
             </h2>
             <div className="w-12 h-[1px] bg-[#A66F70] mt-4"></div>
           </div>
           <div className="md:col-span-5">
-            <p className="font-sans text-sm sm:text-base text-[#A9A39A] leading-relaxed">
+            <p className="font-sans text-sm sm:text-base text-[#C8C0B8] leading-relaxed">
               A compact, transparent process for reviews, builds, and workflow projects.
             </p>
           </div>
@@ -50,25 +50,25 @@ export default function HowItWorks() {
               className="bg-[#242321] border border-[#2e2d29] p-7 sm:p-8 flex flex-col justify-between group hover:border-[#3a3935] transition-colors"
             >
               <div>
-                <span className="font-serif text-3xl sm:text-4xl text-[#C9BDB1] block mb-4 tracking-tight">
+                <span className="font-serif text-3xl sm:text-4xl text-[#E7DED5] block mb-4 tracking-tight">
                   {p.phase}
                 </span>
 
                 <div className="w-6 h-[1px] bg-[#A66F70] mb-4"></div>
 
-                <h3 className="font-serif text-xl text-[#C9BDB1] mb-1 tracking-tight">
+                <h3 className="font-serif text-xl text-[#E7DED5] mb-1 tracking-tight">
                   {p.title}
                 </h3>
-                <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#A9A39A] block mb-4">
+                <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#B2AAA2] block mb-4">
                   {p.tagline}
                 </span>
 
-                <p className="font-sans text-xs sm:text-sm text-[#A9A39A] leading-relaxed">
+                <p className="font-sans text-xs sm:text-sm text-[#C8C0B8] leading-relaxed">
                   {p.desc}
                 </p>
               </div>
 
-              <div className="pt-6 mt-6 border-t border-[#2e2d29] flex items-center justify-between text-[#A9A39A]">
+              <div className="pt-6 mt-6 border-t border-[#2e2d29] flex items-center justify-between text-[#B2AAA2]">
                 <span className="font-sans text-[10px] uppercase tracking-[0.2em]">Step {p.phase}</span>
                 <span className="font-mono text-xs">&rarr;</span>
               </div>

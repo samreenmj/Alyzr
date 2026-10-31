@@ -58,15 +58,15 @@ export default function Portfolio() {
       <div className="mx-auto max-w-7xl">
         <div className="mb-12 grid grid-cols-1 items-end gap-6 border-b border-[#2e2d29] pb-8 md:mb-16 md:grid-cols-12 md:gap-8">
           <div className="md:col-span-7">
-            <span className="mb-3 block font-sans text-[11px] uppercase tracking-[0.25em] text-[#A9A39A]">
+            <span className="mb-3 block font-sans text-[11px] uppercase tracking-[0.25em] text-[#B2AAA2]">
               Selected Work
             </span>
-            <h2 className="font-serif text-4xl tracking-tight text-[#C9BDB1] sm:text-5xl md:text-6xl">
+            <h2 className="font-serif text-4xl tracking-tight text-[#E7DED5] sm:text-5xl md:text-6xl">
               Projects &amp; Products.
             </h2>
             <div className="mt-4 h-px w-12 bg-[#A66F70]" />
           </div>
-          <p className="font-sans text-sm leading-relaxed text-[#A9A39A] sm:text-base md:col-span-5">
+          <p className="font-sans text-sm leading-relaxed text-[#C8C0B8] sm:text-base md:col-span-5">
             Selected work across collaborative software, agentic systems, and
             SaaS infrastructure.
           </p>
@@ -105,7 +105,7 @@ export default function Portfolio() {
                   />
                 </div>
                 {project.imageCaption && (
-                  <figcaption className="mt-2 font-sans text-[10px] uppercase tracking-[0.16em] text-[#A9A39A]">
+                  <figcaption className="mt-2 font-sans text-[10px] uppercase tracking-[0.16em] text-[#B2AAA2]">
                     {project.imageCaption}
                   </figcaption>
                 )}
@@ -116,16 +116,16 @@ export default function Portfolio() {
                   index === 1 ? "md:order-1" : ""
                 }`}
               >
-                <span className="mb-3 block font-sans text-[10px] uppercase tracking-[0.22em] text-[#B47B7C]">
+                <span className="mb-3 block font-sans text-[10px] uppercase tracking-[0.22em] text-[#B2AAA2]">
                   {project.category}
                 </span>
-                <h3 className="font-serif text-2xl leading-tight tracking-tight text-[#C9BDB1] sm:text-3xl">
+                <h3 className="font-serif text-2xl leading-tight tracking-tight text-[#E7DED5] sm:text-3xl">
                   {project.website ? (
                     <a
                       href={project.website}
                       target="_blank"
                       rel="noreferrer"
-                      className="transition-colors hover:text-white focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#A66F70]"
+                      className="transition-colors hover:text-white focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#B2AAA2]"
                     >
                       {project.title}
                     </a>
@@ -133,10 +133,10 @@ export default function Portfolio() {
                     project.title
                   )}
                 </h3>
-                <p className="mt-4 font-sans text-sm leading-relaxed text-[#A9A39A] sm:text-base">
+                <p className="mt-4 font-sans text-sm leading-relaxed text-[#C8C0B8] sm:text-base">
                   {project.description}
                 </p>
-                <p className="mt-5 font-mono text-[10px] leading-6 text-[#A9A39A] sm:text-[11px]">
+                <p className="mt-5 font-mono text-[10px] leading-6 text-[#B2AAA2] sm:text-[11px]">
                   {project.technologies.join(" · ")}
                 </p>
                 {project.website && (
@@ -144,7 +144,7 @@ export default function Portfolio() {
                     href={project.website}
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-5 inline-flex items-center gap-2 font-sans text-xs text-[#C9BDB1] transition-colors hover:text-white focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#A66F70]"
+                    className="mt-5 inline-flex items-center gap-2 font-sans text-xs text-[#E7DED5] transition-colors hover:text-white focus-visible:outline focus-visible:outline-1 focus-visible:outline-[#B2AAA2]"
                   >
                     Visit LeakOps
                     <span aria-hidden="true">↗</span>

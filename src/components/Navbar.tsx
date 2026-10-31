@@ -19,9 +19,9 @@ export default function Navbar() {
         {/* Brand Logo */}
         <Link
           href="/"
-          className="group focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C9BDB1]"
+          className="group focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#E7DED5]"
         >
-          <span className="font-serif text-2xl md:text-3xl tracking-[0.01em] text-[#C9BDB1] group-hover:text-white transition-colors">
+          <span className="font-serif text-2xl md:text-3xl tracking-[0.01em] text-[#E7DED5] group-hover:text-white transition-colors">
             Alyzr Labs
           </span>
         </Link>
@@ -32,7 +32,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-sans text-xs uppercase tracking-[0.2em] text-[#A9A39A] hover:text-[#C9BDB1] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C9BDB1] py-1"
+              className="font-sans text-xs uppercase tracking-[0.2em] text-[#B2AAA2] hover:text-[#E7DED5] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#E7DED5] py-1"
             >
               {link.label}
             </Link>
@@ -43,7 +43,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <Link
             href="#contact"
-            className="hidden sm:inline-block px-5 py-2.5 text-xs font-sans uppercase tracking-[0.2em] text-[#C9BDB1] bg-[#242321] border border-[#3a3935] hover:bg-[#C9BDB1] hover:text-[#171715] hover:border-[#C9BDB1] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C9BDB1]"
+            className="hidden sm:inline-block px-5 py-2.5 text-xs font-sans uppercase tracking-[0.2em] text-[#E7DED5] bg-[#242321] border border-[#3a3935] hover:bg-[#E7DED5] hover:text-[#171715] hover:border-[#E7DED5] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#E7DED5]"
           >
             Start Project
           </Link>
@@ -52,7 +52,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-[#C9BDB1] hover:text-white border border-[#2e2d29] bg-[#242321] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C9BDB1]"
+            className="lg:hidden p-2 text-[#E7DED5] hover:text-white border border-[#2e2d29] bg-[#242321] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#E7DED5]"
             aria-label="Toggle navigation menu"
             aria-expanded={mobileMenuOpen}
           >
@@ -92,7 +92,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="font-sans text-sm uppercase tracking-[0.2em] text-[#A9A39A] hover:text-[#C9BDB1] transition-colors py-1"
+                className="font-sans text-sm uppercase tracking-[0.2em] text-[#B2AAA2] hover:text-[#E7DED5] transition-colors py-1"
               >
                 {link.label}
               </Link>
@@ -100,7 +100,7 @@ export default function Navbar() {
             <Link
               href="#contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="inline-block mt-4 text-center px-6 py-3 text-xs font-sans uppercase tracking-[0.2em] text-[#C9BDB1] bg-[#242321] border border-[#3a3935] hover:bg-[#C9BDB1] hover:text-[#171715] transition-colors"
+              className="inline-block mt-4 text-center px-6 py-3 text-xs font-sans uppercase tracking-[0.2em] text-[#E7DED5] bg-[#242321] border border-[#3a3935] hover:bg-[#E7DED5] hover:text-[#171715] transition-colors"
             >
               Start Project
             </Link>

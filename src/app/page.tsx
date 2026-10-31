@@ -24,29 +24,29 @@ export default function Home() {
       <footer className="w-full py-16 md:py-20 px-6 border-t border-[#2e2d29] bg-[#171715] z-20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex flex-col sm:flex-row items-start sm:items-baseline gap-3">
-            <span className="font-serif text-2xl tracking-[0.02em] text-[#C9BDB1]">
+            <span className="font-serif text-2xl tracking-[0.02em] text-[#E7DED5]">
               Alyzr Labs
             </span>
           </div>
 
-          <nav className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-xs font-sans uppercase tracking-[0.2em] text-[#A9A39A]">
-            <Link href="#services" className="hover:text-[#C9BDB1] transition-colors">
+          <nav className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-xs font-sans uppercase tracking-[0.2em] text-[#B2AAA2]">
+            <Link href="#services" className="hover:text-[#E7DED5] transition-colors">
               Services
             </Link>
-            <Link href="#methodology" className="hover:text-[#C9BDB1] transition-colors">
+            <Link href="#methodology" className="hover:text-[#E7DED5] transition-colors">
               Approach
             </Link>
-            <Link href="#work" className="hover:text-[#C9BDB1] transition-colors">
+            <Link href="#work" className="hover:text-[#E7DED5] transition-colors">
               Prototypes
             </Link>
-            <Link href="#contact" className="hover:text-[#C9BDB1] transition-colors">
+            <Link href="#contact" className="hover:text-[#E7DED5] transition-colors">
               Contact
             </Link>
           </nav>
 
-          <div className="flex items-center gap-4 text-xs font-sans text-[#A9A39A]">
+          <div className="flex items-center gap-4 text-xs font-sans text-[#B2AAA2]">
             <span>&copy; {currentYear} Alyzr Labs.</span>
-            <Link href="#" className="hover:text-[#C9BDB1] transition-colors">
+            <Link href="#" className="hover:text-[#E7DED5] transition-colors">
               &uarr; Top
             </Link>
           </div>

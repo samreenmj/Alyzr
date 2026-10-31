@@ -8,8 +8,9 @@
 
   --color-bg-primary: #171715;
   --color-bg-secondary: #242321;
-  --color-heading: #C9BDB1;
-  --color-body: #A9A39A;
+  --color-heading: #E7DED5;
+  --color-body: #C8C0B8;
+  --color-secondary: #B2AAA2;
   --color-accent: #A66F70;
   --color-border: #2e2d29;
 }
@@ -17,8 +18,9 @@
 :root {
   --bg-primary: #171715;
   --bg-secondary: #242321;
-  --heading: #C9BDB1;
-  --body: #A9A39A;
+  --heading: #E7DED5;
+  --body: #C8C0B8;
+  --secondary: #B2AAA2;
   --accent: #A66F70;
   --border: #2e2d29;
 }
@@ -30,7 +32,7 @@ html {
 
 body {
   background-color: #171715;
-  color: #A9A39A;
+  color: #C8C0B8;
   font-family: var(--font-sans), 'General Sans', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
